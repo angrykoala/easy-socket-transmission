@@ -19,8 +19,8 @@ public abstract class EasySocketTransmission implements Serializable {
     	if(checkPort(port)==false) port=defaultPort;
     	Socket socket=new Socket(host,port);
         java.io.OutputStream outputStream =socket.getOutputStream();
-        ObjectOutputStream salida=new ObjectOutputStream(outputStream);
-        salida.writeObject(this);
+        ObjectOutputStream objout=new ObjectOutputStream(outputStream);
+        objout.writeObject(this);
         socket.close();
     }
     public void send(String host) throws IOException{
