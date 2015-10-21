@@ -6,7 +6,7 @@ _by @demiurgosoft_
 Simple abstract class which allow to children objects to send or receive themselves as serialized objects through Sockets connections.
 
 ##Usage
-To use an _Easy Socket Transimission_, extend it to your class
+To use an _Easy Socket Transmission_, extend it to your class
 ```Java
 public class MyClass extends EasySocketTransmission{
 //Your class implementation
