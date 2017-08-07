@@ -1,11 +1,11 @@
 Easy Socket Transmission
 ========================
-_by @demiurgosoft_
+_by @angrykoala_
 
-##Description
+## Description
 Simple abstract class which allow to children objects to send or receive themselves as serialized objects through Sockets connections.
 
-##Usage
+## Usage
 To use an _Easy Socket Transmission_, extend it to your class
 ```Java
 public class MyClass extends EasySocketTransmission{
@@ -21,14 +21,14 @@ myClass=(MyClass) EasySocketTransmission.receive();
 ```
 >Compile with `javac EasySocketTransmission.java`
 
-##Class Overview
+## Class Overview
 
-###Variables
+### Variables
 * `public static final int defaultPort=4242` default port to be used when port not valid or not specified in _send_/_receive_ (4242 by default)
 
 * `public static final String defaultHost="localhost"` default host to use when not specified, by default the _localhost_
 
-###Methods
+### Methods
 **Public**
 * `void send(String host,int port) throws IOException` sends the object to given host and port (where should be a Socket listening)
 
